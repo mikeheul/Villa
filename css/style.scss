@@ -37,6 +37,7 @@ h3 {
 }
 .site-border {
 	position: fixed;
+	// background: rgb(13,15,33);
 	background: rgb(255, 255, 255);
 	z-index: 999;
 }
@@ -129,8 +130,11 @@ h3 {
 	}
 	.social {
 		position: absolute;
-		left: -60px; top: 15px;
-		height: 30px; width: 30px;
+		left: -45px; top: 15px;
+		height: 40px; width: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		background: #4fbc9c;
 		transition: 0.8s;
 		ion-icon {
