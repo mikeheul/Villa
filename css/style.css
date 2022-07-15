@@ -95,15 +95,21 @@ h3 span {
 }
 
 .villa-item {
+  position: relative;
   border-right: 1px solid rgba(255, 255, 255, 0.116);
   padding: 50px 20px;
   z-index: 1;
+  overflow: hidden;
 }
 .villa-item:hover .villa-item-content.translate {
   transform: translateY(-50px);
 }
 .villa-item:hover .villa-item-content h3 {
   color: #4fbc9c;
+}
+.villa-item:hover .social {
+  opacity: 1;
+  left: 0;
 }
 .villa-item .villa-item-content {
   height: 100%;
@@ -127,6 +133,17 @@ h3 span {
 }
 .villa-item .villa-item-content h3 {
   transition: 0.5s;
+}
+.villa-item .social {
+  position: absolute;
+  left: -60px;
+  top: 15px;
+  padding: 15px;
+  background: #4fbc9c;
+  transition: 0.5s;
+}
+.villa-item .social ion-icon {
+  color: #fff;
 }
 
 .villa-item-content ul li {

@@ -85,9 +85,11 @@ h3 {
 	}
 }
 .villa-item {
+	position: relative;
 	border-right: 1px solid rgba(255, 255, 255, 0.116);
 	padding: 50px 20px;
 	z-index: 1;
+	overflow: hidden;
 	&:hover {
 		.villa-item-content.translate {
 			transform: translateY(-50px);
@@ -96,6 +98,10 @@ h3 {
 			h3 {
 				color: #4fbc9c;
 			}
+		}
+		.social {
+			opacity: 1;
+			left: 0;
 		}
 	}
 	.villa-item-content {
@@ -119,6 +125,16 @@ h3 {
 		}
 		h3 {
 			transition: .5s;
+		}
+	}
+	.social {
+		position: absolute;
+		left: -60px; top: 15px;
+		padding: 15px;
+		background: #4fbc9c;
+		transition: .5s;
+		ion-icon {
+			color: #fff;
 		}
 	}
 }
