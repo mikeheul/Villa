@@ -1,0 +1,220 @@
+@import "https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+  font-weight: 200;
+}
+
+main {
+  min-height: 100vh;
+}
+
+h3 span {
+  font-weight: 900;
+}
+
+.col-20 {
+  flex: 0 0 20%;
+}
+
+.col-16 {
+  flex: 0 0 16%;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 50px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+.btn:hover {
+  background: #4fbc9c;
+}
+
+.site-border {
+  position: fixed;
+  background: rgb(255, 255, 255);
+  z-index: 999;
+}
+
+.site-border-left {
+  width: 15px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.site-border-right {
+  width: 15px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.site-border-top {
+  width: 100%;
+  height: 15px;
+  top: 0;
+  left: 0;
+}
+
+.site-border-bottom {
+  width: 100%;
+  height: 15px;
+  bottom: 0;
+  left: 0;
+}
+
+.villas {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.villas .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(13, 15, 33);
+  background: linear-gradient(90deg, rgb(13, 15, 33) 14%, rgba(13, 15, 33, 0.8018557765) 65%, rgba(0, 0, 0, 0) 100%);
+  z-index: 0;
+}
+
+.villa-item {
+  border-right: 1px solid rgba(255, 255, 255, 0.116);
+  padding: 50px 40px;
+  z-index: 1;
+}
+.villa-item:hover .villa-item-content.translate {
+  transform: translateY(-50px);
+}
+.villa-item:hover .villa-item-content h3 {
+  color: #4fbc9c;
+}
+.villa-item .villa-item-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  justify-content: space-between;
+  z-index: 2;
+  transition: 0.7s;
+}
+.villa-item .villa-item-content h1 {
+  font-size: 35px;
+  margin-bottom: 60px;
+  letter-spacing: 5px;
+}
+.villa-item .villa-item-content h1 span {
+  font-weight: 700;
+}
+.villa-item .villa-item-content h3 {
+  transition: 0.5s;
+}
+
+.villa-item-content ul li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+.villa-item-content ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.villa-item-content ul li a:hover {
+  color: #4fbc9c;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-left p {
+  font-size: 10px;
+  line-height: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.text-left p ion-icon {
+  color: #4fbc9c;
+  font-size: 20px;
+  padding-right: 10px;
+}
+.text-left p span {
+  color: #4fbc9c;
+  font-weight: 800;
+}
+.text-left a {
+  text-decoration: none;
+}
+
+.first {
+  padding-bottom: 30px;
+}
+
+.first-text-bottom {
+  color: rgb(143, 143, 143);
+}
+
+.first-bottom-title {
+  display: inline-flex;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@media (max-width: 1300px) {
+  .btn {
+    margin-bottom: 50px;
+  }
+  .villas {
+    flex-direction: column;
+    height: auto;
+    background-size: cover;
+  }
+  .villa-item {
+    padding: 50px 20px;
+  }
+  .villa-item .villa-item-content.translate {
+    text-align: center;
+  }
+  .villa-item:hover .villa-item-content.translate {
+    transform: unset;
+  }
+  .col-20 {
+    flex: 0 0 100%;
+  }
+  .col-16 {
+    text-align: center;
+  }
+  .text-left {
+    text-align: center;
+  }
+  .site-border {
+    display: none;
+  }
+  .text-top.middle {
+    margin-bottom: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
