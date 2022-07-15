@@ -1,2 +1,2 @@
 # Villa
-HTML-CSS-JS Template - Villa
+HTML-CSS Template - Villa
