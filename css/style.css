@@ -29,7 +29,7 @@ h3 span {
   padding: 10px 50px;
   background: #fff;
   color: #000;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
   margin-top: 30px;
   transition: 0.5s;
@@ -94,7 +94,7 @@ h3 span {
 
 .villa-item {
   border-right: 1px solid rgba(255, 255, 255, 0.116);
-  padding: 50px 40px;
+  padding: 50px 20px;
   z-index: 1;
 }
 .villa-item:hover .villa-item-content.translate {
@@ -116,7 +116,7 @@ h3 span {
 }
 .villa-item .villa-item-content h1 {
   font-size: 35px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   letter-spacing: 5px;
 }
 .villa-item .villa-item-content h1 span {
@@ -133,8 +133,8 @@ h3 span {
 .villa-item-content ul li a {
   text-decoration: none;
   color: #fff;
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 11px;
+  font-weight: 300;
   transition: 0.5s;
 }
 .villa-item-content ul li a:hover {
@@ -169,6 +169,7 @@ h3 span {
 
 .first-text-bottom {
   color: rgb(143, 143, 143);
+  font-size: 13px;
 }
 
 .first-bottom-title {
