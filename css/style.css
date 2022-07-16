@@ -1,4 +1,8 @@
 @import "https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap";
+:root {
+  --accentColor: #4fbc9c;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -35,7 +39,7 @@ h3 span {
   transition: 0.5s;
 }
 .btn:hover {
-  background: #4fbc9c;
+  background: var(--accentColor);
 }
 
 .site-border {
@@ -105,7 +109,7 @@ h3 span {
   transform: translateY(-50px);
 }
 .villa-item:hover .villa-item-content h3 {
-  color: #4fbc9c;
+  color: var(--accentColor);
 }
 .villa-item:hover .social {
   opacity: 1;
@@ -143,7 +147,7 @@ h3 span {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #4fbc9c;
+  background: var(--accentColor);
   transition: 0.8s;
 }
 .villa-item .social ion-icon {
@@ -162,7 +166,7 @@ h3 span {
   transition: 0.5s;
 }
 .villa-item-content ul li a:hover {
-  color: #4fbc9c;
+  color: var(--accentColor);
 }
 
 .text-left {
@@ -175,12 +179,12 @@ h3 span {
   letter-spacing: 2px;
 }
 .text-left p ion-icon {
-  color: #4fbc9c;
+  color: var(--accentColor);
   font-size: 20px;
   padding-right: 10px;
 }
 .text-left p span {
-  color: #4fbc9c;
+  color: var(--accentColor);
   font-weight: 800;
 }
 .text-left a {
